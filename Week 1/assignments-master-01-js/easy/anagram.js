@@ -5,9 +5,30 @@
 */
 
 function isAnagram(str1, str2) {
-  const cleanStr = (str) => str.replace(/\s/g,'').toLowerCase();
+  const cleanStr = (str) => str.replace(/\s/g,'').toLowerCase(); //extra space remove 
   const sortedStr = (str) => cleanStr(str).split('').sort().join('');
   return sortedStr(str1) === sortedStr(str2);
 }
 
 module.exports = isAnagram;
+
+//Other And Simple Logic
+/* 
+
+function isAnagram(str1, str2) {
+  // Check if the lengths of the strings are equal
+  if (str1.length !== str2.length) {
+      return false;
+  }
+
+  // Helper function to sort characters in a string
+  function sortString(str) {
+      return str.toLowerCase().split('').sort().join('');
+  }
+
+  // Sort and compare the sorted strings
+  return sortString(str1) === sortString(str2);
+}
+
+module.exports = isAnagram;
+*/
