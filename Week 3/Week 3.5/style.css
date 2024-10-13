@@ -1,0 +1,14 @@
+.Mouse{
+    margin: 20px;
+    background-color: #935555;
+    padding: 30px; 
+}
+#bubbling,#capchling{
+    background-color: orange;
+    padding: 50px;
+    margin: 10px;
+}
+#smallB,#smallC{
+    background-color: #fff;
+    padding: 30px;
+}

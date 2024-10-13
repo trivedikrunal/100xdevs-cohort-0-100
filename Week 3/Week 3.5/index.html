@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form >
+        Enter Name: <input type="text" id="name" oninput="upper()">
+        <br>
+        <button id="ck">Click Me</button>
+    </form>
+
+    <div class="Mouse" onmouseover="mOve(this)" onmouseout="mOut(this)">Over Me</div>
+    <div id="showNumber"></div>
+
+    <div id="bubbling">
+        <div id="smallB">Bubbling</div>
+    </div>
+    <div id="capchling">
+        <div id="smallC">Capchling</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
